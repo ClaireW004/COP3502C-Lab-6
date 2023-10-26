@@ -1,6 +1,6 @@
 """
 Authors: Claire Wang
-Purpose: Create an encode() function that encodes a user input password
+Purpose: Create an encode() and main() function that encodes a user input password
 Date: 10/25/2023
 """
 
@@ -11,15 +11,6 @@ def encode(to_encode):
         new_value = num + 3
         encoded_value += str(new_value)
     return encoded_value
-
-
-def decode(to_decode):
-    decoded_value = ""
-    for num in to_decode:
-        num = int(num)
-        new_value = num - 3
-        decoded_value += str(new_value)
-    return decoded_value
 
 
 def main():
